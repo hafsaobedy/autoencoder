@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Use TkAgg backend for Windows plotting
+matplotlib.use('TkAgg')  
 
 import torch
 import torch.nn as nn

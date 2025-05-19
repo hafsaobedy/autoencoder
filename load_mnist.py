@@ -2,7 +2,7 @@ import torch
 from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 
-# Transform: convert images to tensors only (no normalization for better autoencoder compatibility)
+#convert images to tensors only (no normalization for better autoencoder compatibility)
 transform = transforms.ToTensor()
 
 # Load MNIST training dataset from torchvision
@@ -20,5 +20,5 @@ for i in range(6):
     axs[i].axis('off')
 
 plt.tight_layout()
-plt.savefig('mnist_samples.png')  # Save the figure as mnist_samples.png
+plt.savefig('mnist_samples.png') 
 plt.show()

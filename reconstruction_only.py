@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Use TkAgg backend for Windows plotting
+matplotlib.use('TkAgg') 
 
 import torch
 import torch.nn as nn
@@ -86,7 +86,7 @@ def plot_images(original, reconstructed, n=6):
         plt.axis('off')
 
     plt.tight_layout()
-    plt.show(block=True)  # Ensures the plot stays open until manually closed
+    plt.show(block=True)  
 
 # Select a batch of test images
 test_images, _ = next(iter(train_loader))
